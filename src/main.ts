@@ -21,7 +21,10 @@ if (!context) {
 const ctx: CanvasRenderingContext2D = context
 
 const space = new Space(new Vec2(0, 0))
-const square = new Body(BodyType.STATIC, new Vec2(320, 240))
+const square = new Body(
+  BodyType.STATIC,
+  new Vec2(canvas.width / 2, canvas.height / 2),
+)
 square.shapes.add(new Polygon(Polygon.box(120, 120)))
 square.space = space
 
