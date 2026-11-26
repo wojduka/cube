@@ -1,6 +1,6 @@
 # cube
 
-A small TypeScript canvas starter. `npm start` compiles `src/main.ts` to `dist/main.js` and serves that folder, so the browser loads the compiled JavaScript.
+A small TypeScript canvas app using [@newkrok/nape-js](https://github.com/NewKrok/nape-js) (the published `nape-js` package). `npm start` compiles `src/main.ts` to `dist/main.js`, copies the engine's ESM build next to it, and serves that folder. The page loads the compiled script, which imports `@newkrok/nape-js` through an import map. The package ships its own types; this project resolves them with `moduleResolution: bundler`.
 
 ## Run
 

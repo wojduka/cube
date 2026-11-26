@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc && cp public/index.html dist/index.html",
+    "build": "tsc && cp public/index.html dist/index.html && mkdir -p dist/nape && cp node_modules/@newkrok/nape-js/dist/index.js node_modules/@newkrok/nape-js/dist/chunk-*.js dist/nape/",
     "start": "npm run build && serve dist",
     "dev": "tsc --watch"
   },
@@ -16,5 +16,8 @@
     "serve": "^14.2.4",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.2"
+  },
+  "dependencies": {
+    "@newkrok/nape-js": "^3.43.5"
   }
 }
