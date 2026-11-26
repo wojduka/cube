@@ -13,4 +13,4 @@ npm start
 
 Then open http://localhost:3000
 
-`npm run build` only compiles. `npm run dev` watches TypeScript and recompiles into `dist/`.
+`npm start` (and `npm run dev`) rebuild and reload that page when a file under `src/` or `public/` is saved, including TypeScript and `public/index.html`. `npm run build` only compiles.

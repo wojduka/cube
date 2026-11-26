@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc && cp public/index.html dist/index.html && mkdir -p dist/nape && cp node_modules/@newkrok/nape-js/dist/index.js node_modules/@newkrok/nape-js/dist/chunk-*.js dist/nape/",
-    "start": "npm run build && serve dist",
-    "dev": "tsc --watch"
+    "start": "node scripts/start.mjs",
+    "dev": "node scripts/start.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
